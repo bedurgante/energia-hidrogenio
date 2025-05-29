@@ -83,6 +83,15 @@
     background-color: #4CAF50;
     flex-shrink: 0;
   }
+
+  .linha1 {
+    margin-top: 5%;
+    width: 950px;
+    height: 2px;
+    background-color: #4CAF50;
+    flex-shrink: 0;
+
+  }
   
   .descricao {
     flex: 1;
