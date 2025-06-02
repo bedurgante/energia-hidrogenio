@@ -3,78 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto de Prototipagem</title>
+  <title>Energia por Hidrogênio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Energia à base de hidrogênio</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#objetivo">Objetivo</a>
-      <a href="#tecnologia">Tecnologias</a>
-      <a href="#prototipo">Protótipo</a>
-    </nav>
+  <header id="header">
+    <div class="container">
+      <h1>Energia Sustentável com Hidrogênio</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#objetivo">Objetivo</a></li>
+          <li><a href="#tecnologia">Tecnologias</a></li>
+          <li><a href="#prototipo">Protótipo</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p>
-        Este projeto consiste na geração de energia à base de hidrogênio.
-         A ideia é mostrar a conversão do hidrogênio para eletricidade, como fonte 
-         mostrando como é possivel ser uma alternativa ao invés do combústivel fossil.
-         Isso mostra também mostra o conceito de tecnologia verde
-        e sendo uma solução limpa e sustentável de conversão de energia.
-   </p>
-   <div class="linha1"></div>
-  </section>
-
-  <section id="objetivo">
-    <h2>Objetivo</h2>
-    <p>
-      O objetivo deste projeto é desenvolver um protótipo prático de conversão de energia para o 
-      hidrogênio, promovendo o uso de energia limpa e buscando por soluções 
-      sustentáveis e inovadoras no lugar do combústivel fossil que tem malefícios para o planeta.
-    </p>
-    <div class="linha1"></div>
-  </section>
-
-  <section id="tecnologia">
-    <h2>Tecnologias Utilizadas</h2>
-    <ul>
-      <li>TESTE</li>
-      <li>.</li>
-    </ul>
-    <div class="linha1"></div>
-  </section>
-
-  <section id="prototipo">
-    <h2>Protótipo</h2>
-
-    <div class="imagem-com-detalhe">
-      
-      <div class="imagem-exemplo">
-        <img src="./imagens/planta_projeto.png" alt="planta_projeto" width="250" height="180"></div>
-      <div class="linha"></div>
-      <div class="descricao">
-        <h3>Foto 1 do Protótipo</h3>
-        <p>Descrição do protótipo.</p>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h2>Energia Limpa para um Futuro Sustentável</h2>
+        <p>Descubra como o hidrogênio pode revolucionar a geração de energia.</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
       </div>
-    </div>
+    </section>
 
-    <div class="imagem-com-detalhe">
-      <div class="imagem-exemplo">Exemplo de Imagem 2</div>
-      <div class="linha"></div>
-      <div class="descricao">
-        <h3>Foto 2 do Protótipo</h3>
-        <p> Descrição do protótipo.</p>
+    <section id="sobre" class="fade-in">
+      <div class="container">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          Este projeto propõe a utilização do hidrogênio como fonte de energia limpa e renovável, substituindo combustíveis fósseis e contribuindo para um planeta mais verde.
+        </p>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <section id="objetivo" class="fade-in">
+      <div class="container">
+        <h2>Objetivo</h2>
+        <p>
+          Desenvolver um protótipo funcional de geração de energia via hidrogênio, promovendo soluções tecnológicas limpas, sustentáveis e acessíveis.
+        </p>
+      </div>
+    </section>
+
+    <section id="tecnologia" class="fade-in">
+      <div class="container">
+        <h2>Tecnologias Utilizadas</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Células de Combustível</h3>
+            <p>Transformam hidrogênio em eletricidade com eficiência e zero emissões.</p>
+          </div>
+          <div class="card">
+            <h3>Arduino</h3>
+            <p>Plataforma para controle de sensores e operações automatizadas.</p>
+          </div>
+          <div class="card">
+            <h3>Sensores Ambientais</h3>
+            <p>Monitoramento em tempo real do sistema e consumo energético.</p>
+          </div>
+          <div class="card">
+            <h3>Design Sustentável</h3>
+            <p>Uso de materiais recicláveis e estrutura modular.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototipo" class="fade-in">
+      <div class="container">
+        <h2>Protótipo</h2>
+        <div class="prototipo">
+          <div class="prototipo-img">
+            <img src="./imagens/planta_projeto.png" alt="Planta do Protótipo">
+          </div>
+          <div class="prototipo-desc">
+            <h3>Planta do Sistema</h3>
+            <p>Visualização esquemática do funcionamento do sistema de hidrogênio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 - Abel Cristiano, Bernardo Durgante e Mateus Barth</p>
+    <div class="container">
+      <p>&copy; 2025 - Abel Cristiano, Bernardo Durgante e Mateus Barth</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
