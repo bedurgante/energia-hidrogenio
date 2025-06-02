@@ -78,7 +78,7 @@
         <h2>Protótipo</h2>
         <div class="prototipo">
           <div class="prototipo-img">
-            <img src="./imagens/planta_projeto.png" alt="Planta do Protótipo">
+            <img src="./carrinhoprototipo.png" alt="Planta do Protótipo">
           </div>
           <div class="prototipo-desc">
             <h3>Protótipo do Projeto do Carrinho</h3>
@@ -88,9 +88,12 @@
     
       </div>
     </section>
-      <div class="perguntas">
-        <h1>Dúvidas</h1>
-      </div>
+    <div class="feedback-box">
+      <h3>Deixe sua opinião</h3>
+      <textarea id="feedback" placeholder="Escreva aqui..."></textarea>
+      <button id="btnEnviar" onclick="enviarFeedback()">Enviar</button>
+      <div id="confirmacao" class="hidden">✔ Feedback enviado!</div>
+    </div>
   </main>
 
   <footer>

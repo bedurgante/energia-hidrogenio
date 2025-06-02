@@ -39,3 +39,28 @@ window.addEventListener('load', () => {
     section.style.gap = '40px';
   });
 });
+function enviarFeedback() {
+  const input = document.getElementById("feedback");
+  const btn = document.getElementById("btnEnviar");
+  const confirmacao = document.getElementById("confirmacao");
+  const texto = input.value.trim();
+
+  if (texto === "") return;
+
+  btn.disabled = true;
+  btn.textContent = "Enviando...";
+
+  setTimeout(() => {
+    confirmacao.classList.remove("hidden");
+    confirmacao.classList.add("show");
+
+    btn.textContent = "Enviar";
+    btn.disabled = false;
+    input.value = "";
+
+    setTimeout(() => {
+      confirmacao.classList.remove("show");
+      confirmacao.classList.add("hidden");
+    }, 3000);
+  }, 1500);
+}

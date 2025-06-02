@@ -142,16 +142,71 @@ h2 {
   margin-bottom: 10px;
 }
 
-.perguntas{
-  color: white;
- background-color: #004d40;
- width: 250px;
- text-align: center;
- border-radius: 15px;
- margin: 20px;
-
+.feedback-box {
+  background: #004d40;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin: 35px;
 }
 
+.feedback-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.feedback-box h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.feedback-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.feedback-box button {
+  background: linear-gradient(to right, #b6ed9f, #d3f4c5);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-box button:hover {
+  background-color: #45a049;
+}
+
+#confirmacao {
+  margin-top: 15px;
+  color: #28a745;
+  font-size: 16px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#confirmacao.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hidden {
+  display: none;
+}
 /* Footer */
 footer {
   background: #004d40;
