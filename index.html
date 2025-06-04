@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header id="header">
     <div class="container">
@@ -35,7 +37,8 @@
       <div class="container">
         <h2>Sobre o Projeto</h2>
         <p>
-          Este projeto propõe a utilização do hidrogênio como fonte de energia limpa e renovável, substituindo combustíveis fósseis e contribuindo para um planeta mais l impo.
+          Este projeto propõe a utilização do hidrogênio como fonte de energia limpa e renovável,
+          substituindo combustíveis fósseis e contribuindo para um planeta mais limpo.
         </p>
       </div>
     </section>
@@ -44,7 +47,8 @@
       <div class="container">
         <h2>Objetivo</h2>
         <p>
-          Desenvolver um protótipo funcional de geração de energia via hidrogênio, promovendo soluções tecnológicas limpas, sustentáveis e acessíveis.
+          Desenvolver um protótipo funcional de geração de energia via hidrogênio,
+          promovendo soluções tecnológicas limpas, sustentáveis e acessíveis.
         </p>
       </div>
     </section>
@@ -59,15 +63,15 @@
           </div>
           <div class="card">
             <h3>Motor</h3>
-            <p>Motor de baixo consumo energetico para mover o carrinho.</p>
+            <p>Motor de baixo consumo energético para mover o carrinho.</p>
           </div>
           <div class="card">
             <h3>Eletrólise</h3>
-            <p>Processo da eletrólise para alimentação da célula de combustivel</p>
+            <p>Processo de eletrólise para alimentação da célula de combustível.</p>
           </div>
           <div class="card">
-            <h3>Prototipo do Carrinho</h3>
-            <p>Uso de um carrinho reciclado e modificado .</p>
+            <h3>Protótipo do Carrinho</h3>
+            <p>Uso de um carrinho reciclado e modificado.</p>
           </div>
         </div>
       </div>
@@ -76,24 +80,19 @@
     <section id="prototipo" class="fade-in">
       <div class="container">
         <h2>Protótipo</h2>
+        <div class="prototipo-img">
+          <img src="./carrinhoprototipo.png" alt="Planta do Protótipo">
+        </div>
         <div class="prototipo">
-          <div class="prototipo-img">
-            <img src="./carrinhoprototipo.png" alt="Planta do Protótipo">
-          </div>
-          <div class="prototipo-desc">
-            <h3>Protótipo do Projeto do Carrinho</h3>
-            <p>Visualização do protótipo do carrinho de hidrogênio.</p>
+          <div class="feedback-box">
+            <h3>Deixe sua opinião</h3>
+            <textarea id="feedback" placeholder="Escreva aqui..."></textarea>
+            <button id="btnEnviar" onclick="enviarFeedback()">Enviar</button>
+            <div id="confirmacao" class="hidden">✔ Feedback enviado!</div>
           </div>
         </div>
-    
       </div>
     </section>
-    <div class="feedback-box">
-      <h3>Deixe sua opinião</h3>
-      <textarea id="feedback" placeholder="Escreva aqui..."></textarea>
-      <button id="btnEnviar" onclick="enviarFeedback()">Enviar</button>
-      <div id="confirmacao" class="hidden">✔ Feedback enviado!</div>
-    </div>
   </main>
 
   <footer>
@@ -104,4 +103,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
