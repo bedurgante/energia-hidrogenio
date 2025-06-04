@@ -24,15 +24,19 @@ body {
 
 /* Header */
 header {
-  background: #004d40;
+  background: rgba(0, 77, 64, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: white;
-  margin: 10px;
-  padding: 30px 0;
-  position: sticky;
-  top: 10px; /* Mantém margem ao scrollar */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  padding: 30px 0;
   border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
 header h1 {
@@ -76,7 +80,9 @@ nav ul li a:hover {
   overflow: hidden;
   transition: opacity 1s ease, transform 1s ease;
 }
-
+.hero-content{
+  margin-top: 200px;
+}
 /* Animação de saída */
 #hero.saindo {
   opacity: 0;
